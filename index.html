@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Loop</title>
+      <!-- main login css-->
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" id="logincss" type="text/css" href="css/main.css">
+      <link rel="stylesheet" type="text/css" href="css/component_morph.css" />
+      <link rel="stylesheet" type="text/css" href="css/swiper.css">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+      <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+      <link rel="stylesheet" type="text/css" href="css/style1.css" />
+      
+      <!-- grabData css-->
+      <link rel="stylesheet" id="grabData_def" type="text/css" href="" />
+      <link rel="stylesheet" id="grabData_comp" type="text/css" href="" />
+      <link rel="stylesheet" id="grabData_comp2" type="text/css" href="" />
+      <link rel="stylesheet" id="grabData_comp3" type="text/css" href="" />
+      <!-- mainDrag css
+         
+         <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+         <link rel="stylesheet" type="text/css" href="css/demo.css" />
+         <link rel="stylesheet" type="text/css" href="css/bottom-area.css" />-->
+      <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+      <script src="http://www.parsecdn.com/js/parse-1.3.1.min.js"></script>
+      <script src="js/modernizr.custom.js"></script>
+      <script type="text/javascript" src="js/jquery.cookie.js"></script>
+      <script type="text/javascript" src="js/main.js"></script>
+      <script src="http://code.jquery.com/ui/1.11.3/jquery-ui.js"></script>
+      <script src="js/draggabilly.pkgd.min.js"></script>
+      <script src="js/dragdrop.js"></script>
+      <script src="js/jquery.canvasjs.min.js"></script>
+      <script src="js/snap.svg-min.js"></script>
+      <script src="js/svgicons-config.js"></script>
+    <script src="js/svgicons.js"></script>
+      <link rel="stylesheet" type="text/css" href="css/set2.css" />
+   </head>
+   <body>
+      <!-- Login -->
+      <div id="start">
+         <div id="logInForm">
+            <center id="furst">
+               <div id="wlcmHead"></div>
+               <button id="logInTrigger">Log in</button>
+            </center>
+            <center id="loginTriged">
+               <form id="loog">
+                  <input type="text" name="username" placeholder="Username" id="usr">
+                  <input type="password" name="password" placeholder="Password" id="psw">
+                  <button id="logInSubmit" type="submit">Go!</button>
+               </form>
+            </center>
+            <div id="incpsw">Incorrect Username/Password</div>
+         </div>
+      </div>
+      <!-- Login -->
+      <!-- grabData -->
+      <div id="grab" class="container demo-1">
+         <!-- Top Navigation -->
+         <div class="codrops-top clearfix">
+         </div>
+         <header>
+            <h1>Hey there! <span>Tell us a little about yourself.</span></h1>
+         </header>
+      </div>
+      <!-- /container -->
+      <div id="firstTimeScreen">
+      </div>
+      <div id="mainScreen" style="margin-left: 225px;">
+      <div id="light">
+        <h1 style="margin-top: 40px; color: rgb(126, 126, 126);">Tell us what you think! Be honest :)</h1>
+        <textarea name="comments" rows="15" cols="50" id="comments">
+        </textarea>
+        <button style="bottom: 0px; left: 0px;" id="sendFeedback">Send</button>
+        <button style="top: 0px; left: 0px;" id="cncl">Cancel</button> 
+      </div>
+      <div id="fade"></div>
+      <div id="sidebar">
+         <div id="navlogo"></div>
+         <div id="mnav">
+            <nav id="nav_tabs">
+               <ul id="tactual">
+                  <li>
+                     <div>
+                        <a id="searb"><i class="fa fa-search"></i> Search</a>
+                     </div>
+                  </li>
+                  <li>
+                     <div>
+                        <a id="profb"><i class="fa fa-user"></i> Profile</a>
+                     </div>
+                  </li>
+                
+               </ul>
+            </nav>
+         </div>
+         <div id="bottom2">
+            <div id="bottom2i">
+               <div id="bin">
+                  <div>
+                     <a id="help"><i class="fa fa-question"></i> Help</a>
+                  </div>
+                  <div id="logOut">
+                     <a href=""><i class="fa fa-sign-out"></i> Log Out</a>
+                  </div>
+                  <div id="feedBack">
+                     <a href="#">feedback</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="slidein" class="content">
+         <div id="grid">
+            <div class="grid__item" style="z-index: 10;">SQL </div>
+         </div>
+      </div>
+      <div id="selector">
+         <div class="container">
+            <div class="content" id="mainCon">
+               <header class="codrops-header">
+                  <h1>Welcome!<span id="olo">The tiles below are search terms. Don't be shy, drag one!</span></h1>
+               </header>
+               <div id="grid" class="grid clearfix">
+                  <div class="grid__item" id="five">Departments</div>
+                  <div class="grid__item" id="two">Internal Resources</div>
+                  <div class="grid__item" id="three">Products</div>
+                  <div class="grid__item" id="four">Skills</div>
+               </div>
+            </div>
+            <!-- /content -->
+            <!-- Other Content -->
+            <div id="depCon" class="content">
+               <header class="codrops-header">
+                  <div id="backnav"><a id="backBtn">[back]</a>
+                  </div>
+                  <h1>Choose some search terms.</h1>
+               </header>
+               <div id="grid" class="grid clearfix">
+                  <div class="grid__item">A+O</div>
+                  <div class="grid__item">CSS</div>
+                  <div class="grid__item">DX</div>
+                  <div class="grid__item">EPG</div>
+                  <div class="grid__item">Finance</div>
+                  <div class="grid__item">HR</div>
+                  <div class="grid__item">IEB</div>
+                  <div class="grid__item">M+O</div>
+                  <div class="grid__item">DSD</div>
+                  <div class="grid__item">Public Sector</div>
+                  <div class="grid__item">Services</div>
+                  <div class="grid__item">SMSP</div>
+               </div>
+            </div>
+            <div id="intCon" class="content">
+               <header class="codrops-header">
+                  <div id="backnav"><a id="backBtn1">[back]</a>
+                  </div>
+                  <h1>Choose some search terms.</h1>
+               </header>
+               <div id="grid" class="grid clearfix">
+                  <div class="grid__item">Trax</div>
+                  <div class="grid__item">HRWeb</div>
+                  <div class="grid__item">Kudos</div>
+                  <div class="grid__item">MSVacation</div>
+                  <div class="grid__item">KB</div>
+                  <div class="grid__item">TraxHR</div>
+                  <div class="grid__item">Toolbox</div>
+                  <div class="grid__item">Facilities</div>
+                  <div class="grid__item">MyOrder</div>
+                  <div class="grid__item">CIM Tool</div>
+                  <div class="grid__item">MS Invoice</div>
+                  <div class="grid__item">Global VMF</div>
+               </div>
+            </div>
+            <div id="proCon" class="content">
+               <header class="codrops-header">
+                  <div id="backnav"><a id="backBtn2">[back]</a>
+                  </div>
+                  <h1>Choose some search terms.</h1>
+               </header>
+               <div id="grid" class="grid clearfix">
+                  <div class="grid__item">
+                     Azure
+                     <div id="itemx">
+                        <div id="more">more</div>
+                     </div>
+                  </div>
+                  <div class="grid__item">SQL</div>
+                  <div class="grid__item">WP8</div>
+                  <div class="grid__item">Cortana</div>
+                  <div class="grid__item">Surface</div>
+                  <div class="grid__item">Paint</div>
+                  <div class="grid__item">Hololens</div>
+                  <div class="grid__item">MS Band</div>
+                  <div class="grid__item">Arc Touch</div>
+                  <div class="grid__item">I.E</div>
+                  <div class="grid__item">VS</div>
+                  <div class="grid__item">Kinect</div>
+               </div>
+            </div>
+            <div id="skiCon" class="content">
+               <header class="codrops-header">
+                  <div id="backnav"><a id="backBtn3">[back]</a>
+                  </div>
+                  <h1>Choose some search terms.</h1>
+               </header>
+               <div id="grid" class="grid clearfix">
+                  <div class="grid__item">Presentation</div>
+                  <div class="grid__item">Reading</div>
+                  <div class="grid__item">Writing</div>
+                  <div class="grid__item">Teaching</div>
+                  <div class="grid__item">Touring</div>
+                  <div class="grid__item">Lecturing</div>
+                  <div class="grid__item">Coding</div>
+                  <div class="grid__item">Budgeting</div>
+                  <div class="grid__item">Forecasting</div>
+                  <div class="grid__item">Data</div>
+                  <div class="grid__item">Hosting</div>
+                  <div class="grid__item">Research</div>
+               </div>
+            </div>
+         </div>
+         -->
+         <!-- /container -->
+         <div id="drop-area" class="drop-area">
+            <div id="dropItems">
+               <div class="drop-area__item">
+                  <div class="dummy"></div>
+               </div>
+            </div>
+            <div id="dropTrigger">
+               <span class="si-icon si-icon-nav-up-arrow" data-icon-name="navUpArrow"></span>
+            </div>
+            <script>
+      (function() {
+        // initialize all       
+        [].slice.call( document.querySelectorAll( '.si-icon' ) ).forEach( function( el ) {
+          var svgicon = new svgIcon( el, svgIconConfig );
+        } );        
+      })();
+    </script>
+            <div id="searchInit">
+               Search!
+            </div>
+            <div id="clearDaSearch">
+            	Clear
+            </div>
+         </div>
+         <div class="drop-overlay"></div>
+         <script>
+            (function () {
+                var body = document.body,
+                    dropArea = document.getElementById('drop-area'),
+                    droppableArr = [],
+                    dropAreaTimeout;
+            
+                // initialize droppables
+                [].slice.call(document.querySelectorAll('#drop-area .drop-area__item')).forEach(function (el) {
+                    droppableArr.push(new Droppable(el, {
+                        onDrop: function (instance, draggableEl) {
+                            // show checkmark inside the droppabe element
+                            classie.add(instance.el, 'drop-feedback');
+                            clearTimeout(instance.checkmarkTimeout);
+                            instance.checkmarkTimeout = setTimeout(function () {
+                                classie.remove(instance.el, 'drop-feedback');
+                            }, 800);
+                            // ...
+                        }
+                    }));
+                });
+            
+                // initialize draggable(s)
+                [].slice.call(document.querySelectorAll('#grid .grid__item')).forEach(function (el) {
+                    new Draggable(el, droppableArr, {
+                        draggabilly: {
+                            containment: document.body
+                        },
+                        onStart: function () {
+                            // add class 'drag-active' to body
+                            classie.add(body, 'drag-active');
+                            // clear timeout: dropAreaTimeout (toggle drop area)
+                            clearTimeout(dropAreaTimeout);
+                            // show dropArea
+
+                            	classie.add(dropArea, 'show');
+                            	$('#dropTrigger').css("top","-30px");
+        						$('#searchInit').css("top","-30px");
+        						$('#clearDaSearch').css("top","-30px");
+        						        $.cookie('dropAreaActive', true);
+
+                            
+                            
+                        },
+                        onEnd: function (wasDropped) {
+                            var afterDropFn = function () {
+                                // hide dropArea
+                                if (!($.cookie('dropAreaActive'))) {
+
+                                	classie.remove(dropArea, 'show');
+                                };
+                                
+                                // remove class 'drag-active' from body
+                                classie.remove(body, 'drag-active');
+                            };
+            
+                            if (!wasDropped) {
+                                afterDropFn();
+                            } else {
+                                // after some time hide drop area and remove class 'drag-active' from body
+                                clearTimeout(dropAreaTimeout);
+                                dropAreaTimeout = setTimeout(afterDropFn, 400);
+                            }
+                        }
+                    });
+                });
+            })();
+         </script>
+      </div>
+      <div id="homep">
+         <div class="swiper-container">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div id="chartContainer"></div>
+               </div>
+               <div class="swiper-slide">
+                  <div id="recentSearches">
+                     Recent Searches
+                     <div id="recOuter" class="recTop">CSS>TraxHR</div>
+                     <div id="recOuter">DX>Presentation>Azure</div>
+                     <div id="recOuter">SMSP>Azure</div>
+                     <div id="recOuter">CSS>Teaching>Azure>SQLAzure</div>
+                  </div>
+               </div>
+               <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/3)"></div>
+               <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/4)"></div>
+               <div class="swiper-slide" style="background-image:url(http://lorempixel.com/600/600/nature/5)"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
+         <script type="text/javascript" src="js/swiper.min.js"></script>
+         <script>
+            var swiper = new Swiper('.swiper-container', {
+                pagination: '.swiper-pagination',
+                effect: 'cube',
+                grabCursor: true,
+                cube: {
+                    shadow: true,
+                    slideShadows: true,
+                    shadowOffset: 20,
+                    shadowScale: 0.94
+                }
+            });
+         </script>
+      </div>
+      <div id="profi">
+         <div id="content" class="clearfix">
+            <section id="left">
+               <div id="userStats" class="clearfix">
+                  <div class="pic">
+                     <a href=""><img src="img/user_avatar.jpg" width="150" height="150" /></a>
+                  </div>
+                  <div class="data">
+                     <h1 id="usersName"></h1>
+                     <h3>Reading Campus, UK</h3>
+                     <p id="extr1">some info</p>
+                     <p id="extr2">some info</p>
+                     <p id="extr3">some info</p>
+                     <div class="sep"></div>
+                     <ul class="numbers clearfix">
+                        <li>people Helped<strong>0</strong></li>
+                        <li>Asks<strong>0</strong></li>
+                     </ul>
+                  </div>
+               </div>
+               <h1>About Me:</h1>
+               <p contenteditable="true" id="AboutContent">(Just click and type to edit me)</p>
+               <button id="updateAbout">Save</button>
+            </section>
+            <section id="right">
+               <div class="gcontent" id="skillZone">
+                  <div class="head">
+                     <h1 id="skillCout"></h1>
+                  </div>
+                  <div class="boxy">
+                     <p>The more skills the better!</p>
+                     <div class="badgeCount">
+                        
+                     </div>
+                     <div class="morph-button morph-button-modal morph-button-modal-2 morph-button-fixed">
+                        <button type="button">+Add Skills</button>
+                        <div class="morph-content">
+                           <div>
+                              <div class="content-style-form content-style-form-1">
+                                 <span class="icon icon-close" id="jeff">Close</span>
+                                 <div id="searchToAdd">
+                                 	<input type="text" placeholder="Search" name="search" class="search">
+                                 	
+                                 </div>
+                                 <div id="displayToAdd">
+                                 	<ul id="dialk" name="dialk"></ul>
+                                 </div>
+                                 <div id="addToAdd"></div>
+                                 <div id="addSkillContainer">
+                                     Add
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!-- morph-button -->
+                     <script src="js/classie.js"></script>
+                     <script src="js/uiMorphingButton_fixed.js"></script>
+                     <script>
+                        (function() {
+                            var docElem = window.document.documentElement, didScroll, scrollPosition;
+                        
+                            // trick to prevent scrolling when opening/closing button
+                            function noScrollFn() {
+                                window.scrollTo( scrollPosition ? scrollPosition.x : 0, scrollPosition ? scrollPosition.y : 0 );
+                            }
+                        
+                            function noScroll() {
+                                window.removeEventListener( 'scroll', scrollHandler );
+                                window.addEventListener( 'scroll', noScrollFn );
+                            }
+                        
+                            function scrollFn() {
+                                window.addEventListener( 'scroll', scrollHandler );
+                            }
+                        
+                            function canScroll() {
+                                window.removeEventListener( 'scroll', noScrollFn );
+                                scrollFn();
+                            }
+                        
+                            function scrollHandler() {
+                                if( !didScroll ) {
+                                    didScroll = true;
+                                    setTimeout( function() { scrollPage(); }, 60 );
+                                }
+                            };
+                        
+                            function scrollPage() {
+                                scrollPosition = { x : window.pageXOffset || docElem.scrollLeft, y : window.pageYOffset || docElem.scrollTop };
+                                didScroll = false;
+                            };
+                        
+                            scrollFn();
+                        
+                            [].slice.call( document.querySelectorAll( '.morph-button' ) ).forEach( function( bttn ) {
+                                new UIMorphingButton( bttn, {
+                                    closeEl : '.icon-close',
+                                    onBeforeOpen : function() {
+                                        // don't allow to scroll
+                                        noScroll();
+                                    },
+                                    onAfterOpen : function() {
+                                        // can scroll again
+                                        canScroll();
+                                    },
+                                    onBeforeClose : function() {
+                                        // don't allow to scroll
+                                        noScroll();
+                                    },
+                                    onAfterClose : function() {
+                                        // can scroll again
+                                        canScroll();
+                                    }
+                                } );
+                            } );
+                        
+                            // for demo purposes only
+                            [].slice.call( document.querySelectorAll( 'form button' ) ).forEach( function( bttn ) { 
+                                bttn.addEventListener( 'click', function( ev ) { ev.preventDefault(); } );
+                            } );
+                        })();
+                     </script>
+                  </div>
+               </div>
+               <!-- <div class="gcontent" id="helpedList">
+                  <div class="head">
+                     <h1>Helped List</h1>
+                  </div>
+                  <div class="boxy">
+                  
+                  </div>
+               </div>
+               <div class="gcontent" id="favs">
+                <div class="head">
+                     <h1>Favourites</h1>
+                  </div>
+                  <div class="boxy">
+                  </div>
+               </div> -->
+            </section>
+         </div>
+      </div>
+      <div id="searchResults">
+      <div class="container"></div>
+      
+      <div id="theSidebar" class="sidebar">
+
+      </div>
+      <div id="theGrid" class="main">
+        <section class="griid">
+          
+          
+        </section>
+        <section class="coontent">
+          
+          <button class="close-button"><i class="fa fa-close"></i><span>Close</span></button>
+        </section>
+      </div>
+    
+
+      </div>
+      <script src="js/svgicons-config.js"></script>
+    <script src="js/svgicons.js"></script>
+      
+   </body>
+</html>
